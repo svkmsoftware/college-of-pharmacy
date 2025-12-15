@@ -2,7 +2,7 @@
 
 import PageHero from "@/components/PageHero";
 import { motion } from "framer-motion";
-import desciption from "../../data/aboutSvkm";
+import desciption from "../../data/aboutCop";
 import Image from "next/image";
 
 export default function page() {
@@ -33,7 +33,7 @@ export default function page() {
         </section>
 
         <section className="py-20 bg-[#f8f9fb] text-[#132347]">
-          <div className="max-w-6xl mx-auto px-6 md:px-12 grid md:grid-cols-[30%_70%] gap-12 items-center">
+          <div className="max-w-6xl mx-auto px-6 md:px-12 grid md:grid-cols-[30%_70%] gap-12 items-top">
             {/* Image */}
             <motion.div
               initial={{ opacity: 0, x: -40 }}
@@ -62,23 +62,65 @@ export default function page() {
               </h2>
 
               <blockquote className="border-l-4 border-yellow-500 pl-6 italic text-gray-700 leading-relaxed mb-6">
-                “Education is not merely the accumulation of knowledge, but the
-                illumination of the mind and the empowerment of character. At
-                SVKM, our aim has always been to foster a culture of excellence,
-                innovation, and service to society.”
+                The role of the pharmacist today extends far beyond dispensing
+                medicines; it now encompasses patient care, research,
+                innovation, administration, and contributions to public health.
+                With the continuous emergence of new diseases and complex health
+                challenges, pharmacists are entrusted with the responsibility of
+                not only delivering healthcare but also discovering and
+                developing novel therapeutic solutions.
               </blockquote>
 
               <p className="text-lg text-gray-600 mb-4">
-                We take immense pride in our institutions that nurture young
-                minds into professionals ready to shape a better world. Dr.
-                Bhanuben Nanavati College of Pharmacy stands as one such
-                institute where passion meets purpose, and where every student
-                is encouraged to achieve their fullest potential.
+                At Shri Vile Parle Kelavani Mandal’s (SVKM) College of Pharmacy,
+                Shirpur, we prepare our students to meet these evolving demands
+                by imparting cutting-edge knowledge, practical skills, and a
+                spirit of innovation. In the serene lap of nature, amidst a lush
+                green campus, our institute offers the perfect environment for
+                academic excellence, research, and holistic development.
+              </p>
+              <p className="text-lg text-gray-600 mb-4">
+                Equipped with state-of-the-art infrastructure, advanced
+                laboratories, a resource-rich library, and modern digital
+                learning facilities, we ensure that our students are always at
+                the forefront of pharmaceutical sciences. Our highly qualified
+                and dedicated faculty members, with strong research credentials
+                including patents and publications in reputed national and
+                international journals, mentor students to think critically,
+                innovate boldly, and serve society with responsibility.
+              </p>
+              <p className="text-lg text-gray-600 mb-4">
+                Beyond academics, we firmly believe in nurturing the all-round
+                development of students. By encouraging active participation in
+                intercollegiate, university, state, and national-level events,
+                we cultivate leadership, teamwork, and creativity.
+              </p>
+              <p className="text-lg text-gray-600 mb-4">
+                Our Training and Placement Cell bridges the gap between academia
+                and industry, creating opportunities with leading national and
+                multinational companies while also guiding students towards
+                higher studies and research careers.
+              </p>
+              <p className="text-lg text-gray-600 mb-4">
+                At SVKM’s College of Pharmacy, our vision is not only to create
+                competent professionals but also to shape responsible citizens
+                with strong values, committed to advancing healthcare and
+                improving human life.
+              </p>
+              <p className="text-lg text-gray-600 mb-4">
+                I warmly invite the aspiring young generation to join
+                our nature-bound campus at Shirpur, experience the difference,
+                and carve out a meaningful place in the global field of
+                healthcare and pharmaceutical sciences.
               </p>
 
               <p className="text-base font-semibold text-[#132347] mt-6">
-                <span className="block text-lg">— Mr. John Smith</span>
-                <span className="text-sm text-gray-500">Principal, SVKM's College of Pharmacy</span>
+                <span className="block text-lg">
+                  — Dr. Vivekkumar Redasani{" "}
+                </span>
+                <span className="text-sm text-gray-500">
+                  Principal, SVKM's College of Pharmacy
+                </span>
               </p>
             </motion.div>
           </div>

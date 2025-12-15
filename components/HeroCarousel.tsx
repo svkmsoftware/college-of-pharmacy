@@ -15,7 +15,7 @@ const SLIDES: Slide[] = [
   {
     id: 1,
     img: "/images/carousel/slider1.png",
-    title: "Welcome to SVKM’s School of Pharmacy",
+    title: "Welcome to SVKM’s College of Pharmacy",
     desc: "Empowering the next generation of healthcare innovators.",
   },
   {

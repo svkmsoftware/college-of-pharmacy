@@ -12,7 +12,7 @@ export default function Footer() {
           
           {/* Logo + About */}
           <div>
-            <h2 className="text-2xl font-bold text-yellow-500 mb-4">SVKM School of Pharmacy</h2>
+            <h2 className="text-2xl font-bold text-yellow-500 mb-4">SVKM College of Pharmacy</h2>
             <p className="text-sm leading-relaxed text-gray-400">
               Committed to academic excellence and cutting-edge research in pharmaceutical sciences,
               nurturing the next generation of healthcare leaders.
@@ -47,7 +47,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="text-yellow-500 mt-1" />
-                <span>SVKM School of Pharmacy, Vile Parle (W), Mumbai, Maharashtra, India</span>
+                <span>SVKM College of Pharmacy, Vile Parle (W), Mumbai, Maharashtra, India</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} className="text-yellow-500" />
@@ -55,7 +55,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} className="text-yellow-500" />
-                <span>info@svkmsop.edu.in</span>
+                <span>info@svkmcop.edu.in</span>
               </li>
             </ul>
           </div>
@@ -73,7 +73,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-sm text-gray-400 text-center md:text-right">
-            © {new Date().getFullYear()} SVKM School of Pharmacy. All rights reserved.
+            © {new Date().getFullYear()} SVKM College of Pharmacy. All rights reserved.
           </p>
         </div>
       </div>

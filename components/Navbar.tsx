@@ -35,7 +35,7 @@ const NAV = [
     children: [
       { name: "About SVKM", href: "/about-svkm" },
       { name: "About College of Pharmacy", href: "/college-of-pharmacy" },
-      { name: "Governing Body", href: "/about/governing-body" },
+      { name: "Governing Body", href: "/governing-body" },
       { name: "Best Practices", href: "/about/best-practice" },
       { name: "Distinctiveness", href: "/about/distinctiveness" },
     ],
@@ -57,6 +57,7 @@ const NAV = [
     children: [
       { name: "Academic Calendar", href: "/academics/calendar" },
       { name: "Syllabus", href: "/academics/syllabus" },
+      { name: "Time Table", href: "/academics/timetable" },
     ],
   },
   { name: "Faculty", href: "/faculty" },
@@ -157,7 +158,7 @@ export default function Navbar() {
                 />
                 <div>
                   <h2 className="text-lg font-semibold text-slate-800">
-                    SVKM’s School of Pharmacy
+                    SVKM’s College of Pharmacy
                   </h2>
                 </div>
               </div>

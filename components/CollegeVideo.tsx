@@ -25,7 +25,8 @@ export default function CollegeVideo() {
         >
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=0&rel=0"
+            // src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=0&rel=0"
+            src="/videos/glimpsOfCollege.mp4"
             title="College Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

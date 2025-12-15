@@ -4,16 +4,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const affiliations = [
-  {
-    name: "University of Mumbai",
-    logo: "/images/affiliations/mumbai_university.jpg",
-    link: "https://mu.ac.in/",
-  },
-  {
-    name: "AICTE - All India Council for Technical Education",
-    logo: "/images/affiliations/aicte.png",
-    link: "https://www.aicte-india.org/",
-  },
+  // {
+  //   name: "University of Mumbai",
+  //   logo: "/images/affiliations/mumbai_university.jpg",
+  //   link: "https://mu.ac.in/",
+  // },
   {
     name: "PCI - Pharmacy Council of India",
     logo: "/images/affiliations/pci.png",
@@ -23,6 +18,11 @@ const affiliations = [
     name: "DTE - Directorate of Technical Education, Maharashtra",
     logo: "/images/affiliations/dte.gif",
     link: "https://dtemaharashtra.gov.in/",
+  },
+  {
+    name: "DBATU - Dr. Babasaheb Ambedkar Technological University",
+    logo: "/images/affiliations/DBATU_logo.png",
+    link: "https://dbatu.ac.in/",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function Affiliations() {
         </p>
 
         {/* Affiliations Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8">
           {affiliations.map((item, index) => (
             <motion.a
               key={index}
@@ -61,7 +61,9 @@ export default function Affiliations() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-sm font-semibold text-[#132347]">{item.name}</h3>
+              <h3 className="text-sm font-semibold text-[#132347]">
+                {item.name}
+              </h3>
             </motion.a>
           ))}
         </div>

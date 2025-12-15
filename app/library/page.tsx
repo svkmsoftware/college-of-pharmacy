@@ -44,7 +44,7 @@ export default function page() {
             { label: "Reading Room Capacity", value: "90", icon: <Users /> },
             {
               label: "Library Timing",
-              value: "09.00 AM To 06.00 PM",
+              value: "10.00 AM To 05.00 PM",
               icon: <Clock />,
             },
           ].map((item, i) => (

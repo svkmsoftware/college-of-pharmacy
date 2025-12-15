@@ -39,7 +39,7 @@ export default function page() {
           {
             icon: Phone,
             title: "Admission Enquiry",
-            desc: "9130441114 / 9881190690 / 9326363030",
+            desc: "+91 7588054156",
           },
         ].map((item, i) => (
           <div
