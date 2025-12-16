@@ -43,7 +43,7 @@ export default function page() {
               className="relative h-[340px] md:h-[420px] rounded-2xl overflow-hidden shadow-lg"
             >
               <Image
-                src="/images/president.jpg"
+                src="/images/president1.jpg"
                 alt="President of SVKM"
                 fill
                 className="object-cover"

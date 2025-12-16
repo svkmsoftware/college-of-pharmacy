@@ -6,8 +6,6 @@ import Link from "next/link";
 import {
   Menu,
   X,
-  Mail,
-  Phone,
   Facebook,
   Twitter,
   Linkedin,
@@ -36,20 +34,20 @@ const NAV = [
       { name: "About SVKM", href: "/about-svkm" },
       { name: "About College of Pharmacy", href: "/college-of-pharmacy" },
       { name: "Governing Body", href: "/governing-body" },
-      { name: "Best Practices", href: "/about/best-practice" },
-      { name: "Distinctiveness", href: "/about/distinctiveness" },
+      { name: "Best Practices", href: "/best-practices" },
+      { name: "Distinctiveness", href: "/distinctiveness" },
     ],
   },
   {
     name: "Admissions",
     children: [
       { name: "Admission Approvals", href: "/admission/approvals" },
-      { name: "Courses Offered", href: "/admission/courses" },
+      { name: "Courses Offered", href: "/admission/BPharmacy" },
       { name: "B. Pharmacy", href: "/admission/BPharmacy" },
-      { name: "Online Fees Payment", href: "/admission/courses" },
-      { name: "Rules and Disciplin", href: "/admission/courses" },
-      { name: "Admission Enquiry", href: "/admission/courses" },
-      { name: "Scholarship", href: "/admission/courses" },
+      { name: "Online Fees Payment", href: "/admission/online-fees-payment" },
+      { name: "Rules and Disciplin", href: "/admission/rules-and-disciplin" },
+      { name: "Admission Enquiry", href: "/admission/admission-enquiry" },
+      { name: "Scholarship", href: "/admission/scholarship" },
     ],
   },
   {
@@ -150,38 +148,30 @@ export default function Navbar() {
               {/* Replace /logo.png with your real logo in /public */}
               <div className="flex items-center gap-3">
                 <Image
-                  src="/images/svkm_logo.png"
+                  src="/images/cop_logo.png"
                   alt="SVKM logo"
-                  width={68}
-                  height={68}
+                  width={300}
+                  height={80}
                   className="object-contain"
                 />
-                <div>
+                {/* <div>
                   <h2 className="text-lg font-semibold text-slate-800">
                     SVKM’s College of Pharmacy
                   </h2>
-                </div>
+                </div> */}
               </div>
             </div>
 
             {/* Right: CTA buttons (UGC, Apply Now, Download Prospectus) */}
             <div className="flex items-center gap-4">
               <div className="hidden sm:flex items-center gap-4 text-xs text-slate-700">
-                <a href="#" className="hover:underline">
-                  Faculty Directory
-                </a>
+                <Link href={"/faculty"} className="hover:underline">Faculty</Link>
                 <span className="text-slate-300">|</span>
-                <a href="#" className="hover:underline">
-                  Alumni
-                </a>
+                <Link href={"/alumni"} className="hover:underline">Alumni</Link>
                 <span className="text-slate-300">|</span>
-                <a href="#" className="hover:underline">
-                  Careers
-                </a>
+                <Link href={"/careers"} className="hover:underline">Careers</Link>
                 <span className="text-slate-300">|</span>
-                <a href="#" className="hover:underline">
-                  Contact Us
-                </a>
+                <Link href={"/contact"} className="hover:underline">Contact</Link>
               </div>
 
               <div className="flex items-center gap-3">

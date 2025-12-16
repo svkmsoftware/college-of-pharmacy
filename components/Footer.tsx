@@ -12,7 +12,7 @@ export default function Footer() {
           
           {/* Logo + About */}
           <div>
-            <h2 className="text-2xl font-bold text-yellow-500 mb-4">SVKM College of Pharmacy</h2>
+            <h2 className="text-2xl font-bold text-yellow-500 mb-4">SVKM's College of Pharmacy</h2>
             <p className="text-sm leading-relaxed text-gray-400">
               Committed to academic excellence and cutting-edge research in pharmaceutical sciences,
               nurturing the next generation of healthcare leaders.
@@ -23,9 +23,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-yellow-500 mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/about" className="hover:text-yellow-500 transition">About Us</Link></li>
-              <li><Link href="/admission" className="hover:text-yellow-500 transition">Admissions</Link></li>
-              <li><Link href="/academics" className="hover:text-yellow-500 transition">Academics</Link></li>
+              <li><Link href="/about-svkm" className="hover:text-yellow-500 transition">About SVKM</Link></li>
+              <li><Link href="/college-of-pharmacy" className="hover:text-yellow-500 transition">About COP</Link></li>
+              <li><Link href="/governing-body" className="hover:text-yellow-500 transition">Governing Body</Link></li>
+              <li><Link href="/admission/scholarship" className="hover:text-yellow-500 transition">Scholarship</Link></li>
               <li><Link href="/faculty" className="hover:text-yellow-500 transition">Faculty</Link></li>
             </ul>
           </div>
@@ -46,7 +47,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-yellow-500 mb-4">Contact</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
-                <MapPin size={16} className="text-yellow-500 mt-1" />
+                <MapPin size={35} className="text-yellow-500 mt-1" />
                 <span>SVKM College of Pharmacy, Vile Parle (W), Mumbai, Maharashtra, India</span>
               </li>
               <li className="flex items-center gap-2">
