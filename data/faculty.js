@@ -3,7 +3,7 @@ const FACULTY = [
     sr: 1,
     name: "Dr. Vivekkumar Redasani",
     designation: "Principal",
-    photo: "/images/faculty/sample_profile.png",
+    photo: "/images/faculty/Principal_Vivekkumar_Redasani.jpg",
 
     qualification: "M. Pharm, Ph.D.",
     specialization: "Pharmaceutical Chemistry",
