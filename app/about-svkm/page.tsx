@@ -64,23 +64,51 @@ export default function page() {
               </h2>
 
               <blockquote className="border-l-4 border-yellow-500 pl-6 italic text-gray-700 leading-relaxed mb-6">
-                “Education is not merely the accumulation of knowledge, but the
-                illumination of the mind and the empowerment of character. At
-                SVKM, our aim has always been to foster a culture of excellence,
-                innovation, and service to society.”
+                “At SVKM, our unwavering mission is to provide students with
+                world class education rooted in values, innovation and
+                excellence. Since its inception, SVKM has been driven by the
+                vision of nurturing individuals who embody the highest standards
+                of integrity, while empowering them to aspire towards greater
+                achievements.”
               </blockquote>
 
               <p className="text-lg text-gray-600 mb-4">
-                We take immense pride in our institutions that nurture young
-                minds into professionals ready to shape a better world. Dr.
-                Bhanuben Nanavati College of Pharmacy stands as one such
-                institute where passion meets purpose, and where every student
-                is encouraged to achieve their fullest potential.
+                We believe in creating a harmonious balance between tradition
+                and modernity, instilling timeless values while equipping our
+                students with the skills and perspectives required to succeed in
+                a rapidly evolving world.
+              </p>
+
+              <p className="text-lg text-gray-600 mb-4">
+                Education at SVKM is not limited to academics alone; it is a
+                holistic journey designed to cultivate well-rounded
+                personalities. Through an ideal blend of academics,
+                extracurricular activities, cultural engagements and sports; we
+                aim to make learning an enriching and joyful experience. Our
+                focus is on strengthening the physical, intellectual, emotional,
+                psychological, and spiritual dimensions of every student,
+                preparing them to confidently face the challenges of real life.
+              </p>
+
+              <p className="text-lg text-gray-600 mb-4">
+                Our greatest strength lies in our dedicated faculty and staff,
+                who consistently mentor, guide, and support students with
+                passion and commitment. Supported by state-of-the-art
+                infrastructure, advanced facilities, and a technology driven
+                campus, they create an environment where innovation thrives and
+                talent flourishes.
+              </p>
+
+              <p className="text-lg text-gray-600 mb-4">
+                With this vision, SVKM continues to move forward as a beacon of
+                learning, growth, and transformation. Together, we strive to
+                shape not just successful professionals but also responsible,
+                compassionate, and future ready global citizens.
               </p>
 
               <p className="text-base font-semibold text-[#132347] mt-6">
-                <span className="block text-lg">— Shri Amrish Patel</span>
-                <span className="text-sm text-gray-500">President, SVKM</span>
+                <span className="block text-lg">— Shri. Amrish R. Patel</span>
+                <span className="text-sm text-gray-500">President, Shri Vile Parle Kelavani Mandal</span>
               </p>
             </motion.div>
           </div>
