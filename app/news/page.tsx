@@ -3,6 +3,30 @@ import { ArrowUpRight } from "lucide-react";
 
 const newsData = [
   {
+    title: "Parents-Teachers Meet",
+    description:
+      "Shri Vile Parle Kelavani Mandal's College of Pharmacy, Shirpur, held a successful meeting on January 24, 2026, to discuss student progress and foster transparent communication between faculty and parents.",
+    pdf: "/docs/news/parent_teacher_meet_24012026.pdf",
+    image: "/images/news/parent_teacher_meet_24012026.jpeg",
+    date: "24 January 2026",
+  },
+  {
+    title: "Republic Day 2026",
+    description:
+      "The institution celebrated the 77th Republic Day on January 26, 2026, featuring a flag-hoisting ceremony by Chief Guest Mr. Vinay Bhandari and various patriotic cultural activities.",
+    pdf: "/docs/news/republic_day_26012026.pdf",
+    image: "/images/news/republic_day_26012026.jpeg",
+    date: "26 January 2026",
+  },
+  {
+    title: "Faculty Achievement",
+    description:
+      "In late December 2025, Dr. Aishwarya Jain won 1st prize at the 74th Indian Pharmaceutical Congress for nano-formulation research, and Kuldeep Yadav completed a Sports Law course from Maharashtra National Law University.",
+    pdf: "/images/news/faculty_achievement.png",
+    image: "/images/news/faculty_achievement.png",
+    date: "28 December 2025",
+  },
+  {
     title: "150 Years of Vande Mataram",
     description:
       "Shri Vile Parle Kelvani Mandal's College of Pharmacy, Tardi, Shirpur, celebrated the 150th Anniversary of Vande Mataram on 7th November 2025.",

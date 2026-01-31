@@ -144,13 +144,13 @@ const FACULTY = [
     designation: "Assistant Professor",
     photo: "/images/faculty/Aishwarya_Jain.png",
 
-    qualification: "M. Pharm, Ph.D. Research Scholar",
+    qualification: "M. Pharm, PhD",
     specialization: "Pharmaceutics",
     email: "aishwarya.jain@svkm.ac.in",
 
     experience: {
-      total: 6.8,
-      academic: 6.8,
+      total: 7,
+      academic: 7,
       industrial: 0,
     },
 
@@ -214,7 +214,7 @@ const FACULTY = [
     designation: "Assistant Professor",
     photo: "/images/faculty/Mohini_Tayade.jpg",
 
-    qualification: "M. Pharm",
+    qualification: "M.Pharm, PhD Scholar",
     specialization: "Pharmacology",
     email: "mohini.tayade@svkm.ac.in",
 

@@ -43,7 +43,7 @@ export default function GoverningBodyPage() {
                     ["4", "Ms. Resha Patel", "Member", "-"],
                     ["5", "Shri. Prashant Goyal", "Member", "-"],
                     ["6", "Dr. Sameer Goyal", "Member", "-"],
-                    ["7", "Ms. Aishwarya Jain", "Member", "Head of Department nominee"],
+                    ["7", "Dr. Aishwarya Jain", "Member", "Head of Department nominee"],
                     ["8", "Dr. Pankaj Pal", "Member", "Teaching faculty nominee"],
                     ["9", "Dr. Krishna Swaroop Akey", "Member", "-"],
                     ["10", "Ms. Mohini Tayade", "Member", "-"],
