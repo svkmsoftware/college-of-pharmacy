@@ -1,5 +1,12 @@
 import PageHero from "@/components/PageHero";
 import { ArrowUpRight } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "News and Bulletins",
+  description:
+    "Read the latest announcements, notices, and event highlights from SVKM's College of Pharmacy, Shirpur.",
+};
 
 const newsData = [
   {

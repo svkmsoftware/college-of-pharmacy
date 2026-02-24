@@ -44,7 +44,7 @@ export default function page() {
             >
               <Image
                 src="/images/faculty/Principal_Vivekkumar_Redasani.jpg"
-                alt="President of SVKM"
+                alt="Dr. Vivekkumar Redasani, Principal of SVKM College of Pharmacy"
                 fill
                 className="object-cover"
               />

@@ -1,4 +1,11 @@
 import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Research",
+  description:
+    "Explore research initiatives, publications, and upcoming updates from SVKM's College of Pharmacy, Shirpur.",
+};
 
 export default function Page() {
   return (

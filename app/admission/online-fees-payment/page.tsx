@@ -1,4 +1,11 @@
 import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Online Fees Payment",
+  description:
+    "Find updates and information about online fee payment for students of SVKM's College of Pharmacy, Shirpur.",
+};
 
 export default function Page() {
   return (

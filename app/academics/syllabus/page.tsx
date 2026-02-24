@@ -1,5 +1,12 @@
 import { Download } from "lucide-react";
 import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Syllabus",
+  description:
+    "Access and download the latest syllabus for programs at SVKM's College of Pharmacy, Shirpur.",
+};
 
 const page = () => {
   return (

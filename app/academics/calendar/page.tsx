@@ -1,6 +1,13 @@
 import React from "react";
 import { FileText, Calendar } from "lucide-react";
 import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Academic Calendar",
+  description:
+    "View and download institute and university academic calendars for SVKM's College of Pharmacy, Shirpur.",
+};
 
 const page = () => {
   return (

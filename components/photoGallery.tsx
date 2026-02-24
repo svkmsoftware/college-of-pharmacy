@@ -63,7 +63,7 @@ export default function CampusCarousel() {
             >
               <img
                 src={src}
-                alt={`campus-${i + 1}`}
+                alt={`SVKM College of Pharmacy campus view ${i + 1}`}
                 className="w-full h-full object-cover block"
               />
             </SwiperSlide>

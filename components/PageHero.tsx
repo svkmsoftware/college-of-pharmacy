@@ -19,7 +19,7 @@ export default function PageHero({
       {/* Background Image */}
       <Image
         src={bannerImage} // replace with your image path
-        alt="About SVKM Hero"
+        alt={`${pageTitle} page banner`}
         fill
         className="object-cover brightness-[0.4]"
         priority

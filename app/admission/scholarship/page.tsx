@@ -1,4 +1,11 @@
 import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Scholarships",
+  description:
+    "Learn about scholarship and concession schemes available for eligible students at SVKM's College of Pharmacy, Shirpur.",
+};
 
 export default function Page() {
   return (

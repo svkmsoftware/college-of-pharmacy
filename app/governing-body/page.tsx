@@ -1,4 +1,11 @@
 import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Governing Body",
+  description:
+    "View the governing body, board of governors, and college development committee details for SVKM's College of Pharmacy, Shirpur.",
+};
 
 export default function GoverningBodyPage() {
   return (

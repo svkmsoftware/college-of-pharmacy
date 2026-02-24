@@ -1,5 +1,12 @@
 import PageHero from "@/components/PageHero";
 import { PhoneCall } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Admission Enquiry",
+  description:
+    "Get admission-related assistance, eligibility guidance, and contact details for SVKM's College of Pharmacy, Shirpur.",
+};
 
 export default function Page() {
   return (

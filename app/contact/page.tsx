@@ -1,4 +1,5 @@
 import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
 import {
   MapPin,
   Phone,
@@ -8,6 +9,12 @@ import {
   Linkedin,
   Twitter,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Contact SVKM's College of Pharmacy, Shirpur for admissions, office queries, and location details.",
+};
 
 export default function ContactUs() {
   return (

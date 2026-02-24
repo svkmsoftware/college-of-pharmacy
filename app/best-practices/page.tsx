@@ -1,10 +1,17 @@
 import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
 import {
   MonitorSmartphone,
   Users,
   Factory,
   ClipboardCheck,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Best Practices",
+  description:
+    "Explore institutional best practices at SVKM's College of Pharmacy, Shirpur, including teaching innovation, mentoring, and quality assurance.",
+};
 
 const practices = [
   {

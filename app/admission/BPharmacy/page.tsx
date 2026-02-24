@@ -1,4 +1,5 @@
 import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
 import {
   GraduationCap,
   BookOpen,
@@ -7,6 +8,12 @@ import {
   Award,
   Briefcase,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "B. Pharmacy Admissions",
+  description:
+    "Explore the B. Pharmacy program, intake, highlights, scholarships, and career opportunities at SVKM's College of Pharmacy, Shirpur.",
+};
 
 export default function page() {
   return (

@@ -1,6 +1,13 @@
 import React from "react";
 import { Download, CalendarDays } from "lucide-react";
 import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Timetable",
+  description:
+    "View and download the academic timetable for SVKM's College of Pharmacy, Shirpur.",
+};
 
 const page = () => {
   return (

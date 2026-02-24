@@ -1,4 +1,11 @@
 import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Rules and Discipline",
+  description:
+    "Review discipline guidelines, code of conduct, and related student policy updates at SVKM's College of Pharmacy, Shirpur.",
+};
 
 export default function Page() {
   return (

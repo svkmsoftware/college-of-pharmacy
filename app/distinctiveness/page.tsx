@@ -1,4 +1,11 @@
 import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Distinctiveness",
+  description:
+    "Discover the unique strengths, values, and institutional distinctiveness of SVKM's College of Pharmacy, Shirpur.",
+};
 
 export default function Page() {
   return (

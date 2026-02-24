@@ -1,4 +1,11 @@
 import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Admission Approvals",
+  description:
+    "Check approval-related updates and admission compliance information for SVKM's College of Pharmacy, Shirpur.",
+};
 
 export default function Page() {
   return (
