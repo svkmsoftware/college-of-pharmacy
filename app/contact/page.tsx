@@ -54,10 +54,10 @@ export default function ContactUs() {
                 <li className="flex items-center gap-3">
                   <Mail className="text-yellow-500 w-6 h-6" />
                   <a
-                    href="mailto:info@svkmcop.edu.in"
+                    href="mailto:cop.shirpur@svkm.ac.in"
                     className="text-gray-700 hover:text-[#132347] transition"
                   >
-                    info@svkmcop.edu.in
+                    cop.shirpur@svkm.ac.in
                   </a>
                 </li>
               </ul>
