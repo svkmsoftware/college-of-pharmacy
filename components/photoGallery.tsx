@@ -57,7 +57,7 @@ export default function CampusCarousel() {
               key={i}
               className="rounded-xl overflow-hidden shadow-xl border-4 border-yellow-500/40"
               style={{
-                width: "300px", // ⭐ slightly smaller width for 3 to fit well
+                width: "300px", 
                 height: "240px",
               }}
             >

@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Poppins, Open_Sans } from "next/font/google";
+import PagePopup from "@/components/PagePopup";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -49,6 +50,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <PagePopup />
       </body>
     </html>
   );
