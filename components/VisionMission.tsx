@@ -7,32 +7,49 @@ export default function VisionMission() {
     <section className="py-16 md:py-20 text-gray-100 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-12">
 
-        {/* Admission Link */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="mb-8 bg-[#132347] border-l-4 border-yellow-500 p-5 sm:p-6 rounded-2xl shadow-lg"
-        >
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <h3 className="text-lg sm:text-xl font-semibold text-yellow-400">
-              Admission Link
-            </h3>
+      {/* Highlighted Admission Link */}
+<motion.div
+  initial={{ opacity: 0, y: -20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  viewport={{ once: true }}
+  className="mb-10 relative overflow-hidden rounded-2xl border-2 border-yellow-400 bg-gradient-to-r from-[#132347] via-[#1b315f] to-[#132347] p-5 sm:p-6 shadow-[0_0_20px_rgba(234,179,8,0.35)]"
+>
+  {/* Highlight Glow */}
+  <div className="absolute inset-0 bg-yellow-400/5 animate-pulse pointer-events-none" />
 
-            <a
-              href="https://sdcappscs.svkm.ac.in:44300/irj/portal"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-yellow-500 hover:bg-yellow-400 text-[#132347] font-semibold px-5 py-2.5 rounded-lg transition-colors text-center"
-            >
-              Apply for Admission
-            </a>
-          </div>
-        </motion.div>
+  <div className="relative flex flex-col sm:flex-row items-center justify-between gap-5">
+    
+    <div className="flex items-center gap-4">
+      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 text-[#132347] text-xl font-bold shadow-lg">
+        🎓
+      </div>
 
-        <div className="grid md:grid-cols-2 gap-8 md:gap-10">
+      <div>
+        <p className="text-xs sm:text-sm uppercase tracking-wider text-yellow-300 font-medium">
+          Admissions Open
+        </p>
 
+        <h3 className="text-xl sm:text-2xl font-bold text-white">
+          Admission Link
+        </h3>
+      </div>
+    </div>
+
+    <a
+      href="https://sdcappscs.svkm.ac.in:44300/irj/portal"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative inline-flex items-center gap-2 rounded-full bg-yellow-400 px-6 py-3 text-base font-bold text-[#132347] shadow-lg transition-all duration-300 hover:scale-105 hover:bg-yellow-300 hover:shadow-yellow-400/50"
+    >
+      Apply for Admission
+      <span className="transition-transform duration-300 group-hover:translate-x-1">
+        →
+      </span>
+    </a>
+
+  </div>
+</motion.div>
           {/* Vision */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
