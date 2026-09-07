@@ -6,7 +6,33 @@ export default function VisionMission() {
   return (
     <section className="py-16 md:py-20 text-gray-100 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-12">
+
+        {/* Admission Link */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="mb-8 bg-[#132347] border-l-4 border-yellow-500 p-5 sm:p-6 rounded-2xl shadow-lg"
+        >
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <h3 className="text-lg sm:text-xl font-semibold text-yellow-400">
+              Admission Link
+            </h3>
+
+            <a
+              href="https://sdcappscs.svkm.ac.in:44300/irj/portal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-yellow-500 hover:bg-yellow-400 text-[#132347] font-semibold px-5 py-2.5 rounded-lg transition-colors text-center"
+            >
+              Apply for Admission
+            </a>
+          </div>
+        </motion.div>
+
         <div className="grid md:grid-cols-2 gap-8 md:gap-10">
+
           {/* Vision */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -68,6 +94,7 @@ export default function VisionMission() {
           <h3 className="text-xl sm:text-2xl font-semibold text-yellow-400 mb-3 sm:mb-4">
             Program Educational Objectives
           </h3>
+
           <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base md:text-lg list-decimal list-inside text-gray-300">
             <li>
               Graduates will establish themselves in different sectors of the
@@ -80,6 +107,7 @@ export default function VisionMission() {
             </li>
           </ul>
         </motion.div>
+
       </div>
     </section>
   );
