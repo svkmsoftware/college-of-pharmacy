@@ -7,6 +7,9 @@ import {
   Phone,
   Award,
   Briefcase,
+  FileText,
+  Download,
+  Calendar,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -16,23 +19,89 @@ export const metadata: Metadata = {
 };
 
 export default function page() {
+  const scheduleData = [
+    { activity: "Display of Vacant seats available", date: "09/09/2026" },
+    { activity: "Last date of receiving application for Admission to Institute level", date: "10/09/2026" },
+    { activity: "Display of Provisional merit list at Institute level", date: "11/09/2026" },
+    { activity: "Submission of Grievances, if any", date: "12/09/2026 (upto 3:00 pm)" },
+    { activity: "Display of final merit list", date: "12/09/2026 (upto 5:00 pm)" },
+    { activity: "Reporting to the Institute & Confirmation of Admission", date: "13/09/2026 to 15/09/2026 (upto 5:00 pm)" },
+    { activity: "Commencement of Classes for Institute Level Admissions", date: "15/09/2026" },
+  ];
+
   return (
     <section className="bg-gray-50 text-[#132347]">
       {/* Hero Section */}
-      {/* <div className="relative bg-[#132347] text-white py-20">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4"></h1>
-          <p className="text-gray-200 max-w-3xl mx-auto"></p>
-        </div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581093588401-22c97d9d3a59?auto=format&fit=crop&w=1350&q=80')] opacity-10 bg-cover"></div>
-      </div> */}
-
       <PageHero
         bannerImage="/images/page_banner.png"
         pageTitle="Bachelor of Pharmacy (B. Pharm)"
-        description="Empowering students with knowledge, innovation, and skills to excel in the world of
-            pharmaceutical sciences."
+        description="Empowering students with knowledge, innovation, and skills to excel in the world of pharmaceutical sciences."
       />
+
+      {/* Dynamic Admission Notice & Schedule Section */}
+      <div className="max-w-6xl mx-auto px-6 mt-10">
+        <div className="bg-white border-2 border-yellow-400 rounded-2xl shadow-xl overflow-hidden">
+          {/* Section Header */}
+          <div className="bg-[#132347] text-white p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+              <div className="flex items-center gap-2 text-yellow-400 text-xs font-bold uppercase tracking-wider mb-1">
+                <Calendar className="w-4 h-4" /> Official Notice | Academic Year 2026-27
+              </div>
+              <h2 className="text-xl md:text-2xl font-bold">
+                Direct Second Year B. Pharmacy Admission Schedule (Against CAP)
+              </h2>
+            </div>
+
+            {/* Link to PDF Download */}
+            <a
+              href="/Against CAP Admission Schedule DSP B.Pharmacy A.Y.26-27.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-[#132347] font-bold px-5 py-2.5 rounded-full text-sm shadow-md transition shrink-0"
+            >
+              <Download className="w-4 h-4" />
+              Download Schedule PDF
+            </a>
+          </div>
+
+          {/* Schedule Table */}
+          <div className="p-6">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b border-gray-200 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                    <th className="py-3 px-4">Activity</th>
+                    <th className="py-3 px-4 w-64">Schedule</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100 text-sm">
+                  {scheduleData.map((item, index) => (
+                    <tr key={index} className="hover:bg-yellow-50/50 transition">
+                      <td className="py-3.5 px-4 font-medium text-gray-800">{item.activity}</td>
+                      <td className="py-3.5 px-4 font-semibold text-[#132347] whitespace-nowrap">
+                        {item.date}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            {/* Enquiry Contact Info */}
+            <div className="mt-6 pt-4 border-t border-gray-100 flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm text-gray-600 gap-2">
+              <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-yellow-500" />
+                <span>Contacts: <strong>7588054156</strong>, <strong>7499488334</strong></span>
+              </div>
+              <div className="flex items-center gap-2">
+                <FileText className="w-4 h-4 text-yellow-500" />
+                <span>Email: <strong>Cop.shirpur@svkm.ac.in</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Quick Facts */}
       <div className="max-w-6xl mx-auto px-6 py-12 grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
@@ -46,7 +115,7 @@ export default function page() {
           {
             icon: Phone,
             title: "Admission Enquiry",
-            desc: "+91 7588054156",
+            desc: "+91 7588054156 / +91 7499488334",
           },
         ].map((item, i) => (
           <div
@@ -77,7 +146,7 @@ export default function page() {
         </div>
       </div>
 
-      {/* Curriculum */}
+      {/* Curriculum / Program Highlights */}
       <div className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-center mb-10">
           Program Highlights
