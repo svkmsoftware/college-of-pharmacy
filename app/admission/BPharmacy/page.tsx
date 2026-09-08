@@ -10,6 +10,7 @@ import {
   FileText,
   Download,
   Calendar,
+  ExternalLink,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -19,6 +20,8 @@ export const metadata: Metadata = {
 };
 
 export default function page() {
+  const pdfUrl = "/Against CAP Admission Schedule DSP B.Pharmacy A.Y.26-27.pdf";
+
   const scheduleData = [
     { activity: "Display of Vacant seats available", date: "09/09/2026" },
     { activity: "Last date of receiving application for Admission to Institute level", date: "10/09/2026" },
@@ -41,22 +44,36 @@ export default function page() {
       {/* Dynamic Admission Notice & Schedule Section */}
       <div className="max-w-6xl mx-auto px-6 mt-10">
         <div className="bg-white border-2 border-yellow-400 rounded-2xl shadow-xl overflow-hidden">
-          {/* Section Header */}
-          <div className="bg-[#132347] text-white p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          
+          {/* Section Header with PDF Attached Directly to Heading */}
+          <div className="bg-[#132347] text-white p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-yellow-400/20">
             <div>
               <div className="flex items-center gap-2 text-yellow-400 text-xs font-bold uppercase tracking-wider mb-1">
                 <Calendar className="w-4 h-4" /> Official Notice | Academic Year 2026-27
               </div>
-              <h2 className="text-xl md:text-2xl font-bold">
-                Direct Second Year B. Pharmacy Admission Schedule (Against CAP)
-              </h2>
+              
+              {/* Heading with Attached PDF Action */}
+              <div className="flex flex-wrap items-center gap-3">
+                <h2 className="text-xl md:text-2xl font-bold">
+                  Direct Second Year B. Pharmacy Admission Schedule (Against CAP)
+                </h2>
+                <a
+                  href={pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Schedule PDF"
+                  className="inline-flex items-center gap-1.5 bg-yellow-400 hover:bg-yellow-300 text-[#132347] text-xs font-bold px-3 py-1.5 rounded-md transition shadow-sm"
+                >
+                  <FileText className="w-3.5 h-3.5" />
+                  <span>PDF</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
             </div>
 
-            {/* Link to PDF Download */}
+            {/* Main Action Button */}
             <a
-              href="/Against CAP Admission Schedule DSP B.Pharmacy A.Y.26-27.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href={pdfUrl}
               download
               className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-[#132347] font-bold px-5 py-2.5 rounded-full text-sm shadow-md transition shrink-0"
             >
@@ -65,7 +82,7 @@ export default function page() {
             </a>
           </div>
 
-          {/* Schedule Table */}
+          {/* Schedule Content */}
           <div className="p-6">
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
@@ -86,6 +103,21 @@ export default function page() {
                   ))}
                 </tbody>
               </table>
+            </div>
+
+            {/* Inline PDF Viewer/Embed */}
+            <div className="mt-8">
+              <h4 className="text-sm font-semibold text-gray-600 mb-2 flex items-center gap-2">
+                <FileText className="w-4 h-4 text-yellow-500" />
+                Attached Official Document Preview
+              </h4>
+              <div className="w-full h-[500px] border border-gray-200 rounded-xl overflow-hidden bg-gray-100">
+                <iframe
+                  src={`${pdfUrl}#toolbar=0`}
+                  className="w-full h-full"
+                  title="Admission Notice PDF"
+                />
+              </div>
             </div>
 
             {/* Enquiry Contact Info */}
