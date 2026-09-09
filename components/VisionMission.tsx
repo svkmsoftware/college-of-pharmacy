@@ -26,12 +26,10 @@ export default function VisionMission() {
 
               <div>
                 <p className="text-xs sm:text-sm uppercase tracking-wider text-yellow-300 font-medium">
-                  Admissions Open | Academic Year 2026-27
+                  Admissions Schedule | Academic Year 2026-27
                 </p>
 
-                <h3 className="text-xl sm:text-2xl font-bold text-white">
-                  CAP Admission Portal
-                </h3>
+                
               </div>
             </div>
 
