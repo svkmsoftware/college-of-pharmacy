@@ -33,7 +33,7 @@ export default function page() {
       />
 
     {/* Make sure pdfUrl points to where your file is actually placed inside the public folder */}
-const pdfUrl = "/docs/AgainstCAPAdmissionScheduleDSPBPharmacyAY2627.pdf";
+
 
 {/* CAP Admission Schedule Heading & PDF Attachment Section */}
 <div className="max-w-6xl mx-auto px-6 mt-10">
