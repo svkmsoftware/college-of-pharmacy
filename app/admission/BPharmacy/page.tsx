@@ -13,27 +13,6 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "B. Pharmacy Admissions",
-  description:
-    "Explore the B. Pharmacy program, intake, highlights, scholarships, and career opportunities at SVKM's College of Pharmacy, Shirpur.",
-};
-
-export default function page() {
-  const pdfUrl = "/Against CAP Admission Schedule DSP B.Pharmacy A.Y.26-27.pdf";
-
-  const scheduleData = [
-    { activity: "Display of Vacant seats available", date: "09/09/2026" },
-    { activity: "Last date of receiving application for Admission to Institute level", date: "10/09/2026" },
-    { activity: "Display of Provisional merit list at Institute level", date: "11/09/2026" },
-    { activity: "Submission of Grievances, if any", date: "12/09/2026 (upto 3:00 pm)" },
-    { activity: "Display of final merit list", date: "12/09/2026 (upto 5:00 pm)" },
-    { activity: "Reporting to the Institute & Confirmation of Admission", date: "13/09/2026 to 15/09/2026 (upto 5:00 pm)" },
-    { activity: "Commencement of Classes for Institute Level Admissions", date: "15/09/2026" },
-  ];
-
-  return (
-    <section className="bg-gray-50 text-[#132347]">
       {/* Hero Section */}
       <PageHero
         bannerImage="/images/page_banner.png"
