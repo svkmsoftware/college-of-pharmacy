@@ -40,7 +40,7 @@ const pdfUrl = "/docs/AgainstCAPAdmissionScheduleDSPBPharmacyAY2627.pdf";
   <div className="bg-[#132347] text-white p-6 rounded-2xl border-2 border-yellow-400 shadow-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
     <div>
       <div className="flex items-center gap-2 text-yellow-400 text-xs font-bold uppercase tracking-wider mb-1">
-        <Calendar className="w-4 h-4" /> Official Notice | Academic Year 2026-27
+        <Calendar className="w-4 h-4" /> Official Notice | Academic Year 2026-27.
       </div>
 
       <div className="flex flex-wrap items-center gap-3">
