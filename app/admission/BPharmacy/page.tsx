@@ -59,7 +59,7 @@ export default function page() {
 
           <a
             href={pdfUrl}
-            download="AgainstCAPAdmissionScheduleDSPBPharmacyAY2627.pdf"
+            download="/docs/AgainstCAPAdmissionScheduleDSPBPharmacyAY2627.pdf"
             className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-[#132347] font-bold px-5 py-2.5 rounded-full text-sm shadow-md transition shrink-0"
           >
             <Download className="w-4 h-4" />
