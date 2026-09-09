@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function page() {
   // Directly references the new clean PDF filename in public/
-  const pdfUrl = "/docs/AgainstCAPAdmissionScheduleDSPBPharmacyAY2627.pdf";
+  
 
   return (
     <section className="bg-gray-50 text-[#132347]">
