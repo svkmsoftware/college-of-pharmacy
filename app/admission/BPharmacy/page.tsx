@@ -32,42 +32,44 @@ export default function page() {
         description="Empowering students with knowledge, innovation, and skills to excel in the world of pharmaceutical sciences."
       />
 
-      {/* CAP Admission Schedule Heading & PDF Attachment Section */}
-      <div className="max-w-6xl mx-auto px-6 mt-10">
-        <div className="bg-[#132347] text-white p-6 rounded-2xl border-2 border-yellow-400 shadow-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <div>
-            <div className="flex items-center gap-2 text-yellow-400 text-xs font-bold uppercase tracking-wider mb-1">
-              <Calendar className="w-4 h-4" /> Official Notice | Academic Year 2026-27
-            </div>
+    {/* Make sure pdfUrl points to where your file is actually placed inside the public folder */}
+const pdfUrl = "/docs/AgainstCAPAdmissionScheduleDSPBPharmacyAY2627.pdf";
 
-            <div className="flex flex-wrap items-center gap-3">
-              <h2 className="text-xl md:text-2xl font-bold">
-                CAP Admission Schedule
-              </h2>
-              <a
-                href={pdfUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 bg-yellow-400 hover:bg-yellow-300 text-[#132347] text-xs font-bold px-3 py-1.5 rounded-full transition shadow-sm"
-              >
-                <FileText className="w-3.5 h-3.5" />
-                <span>Click here to view PDF</span>
-                <ExternalLink className="w-3 h-3" />
-              </a>
-            </div>
-          </div>
-
-          <a
-            href={pdfUrl}
-            download="/docs/AgainstCAPAdmissionScheduleDSPBPharmacyAY2627.pdf"
-            className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-[#132347] font-bold px-5 py-2.5 rounded-full text-sm shadow-md transition shrink-0"
-          >
-            <Download className="w-4 h-4" />
-            Download PDF
-          </a>
-        </div>
+{/* CAP Admission Schedule Heading & PDF Attachment Section */}
+<div className="max-w-6xl mx-auto px-6 mt-10">
+  <div className="bg-[#132347] text-white p-6 rounded-2xl border-2 border-yellow-400 shadow-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+    <div>
+      <div className="flex items-center gap-2 text-yellow-400 text-xs font-bold uppercase tracking-wider mb-1">
+        <Calendar className="w-4 h-4" /> Official Notice | Academic Year 2026-27
       </div>
 
+      <div className="flex flex-wrap items-center gap-3">
+        <h2 className="text-xl md:text-2xl font-bold">
+          CAP Admission Schedule
+        </h2>
+        <a
+          href={pdfUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 bg-yellow-400 hover:bg-yellow-300 text-[#132347] text-xs font-bold px-3 py-1.5 rounded-full transition shadow-sm"
+        >
+          <FileText className="w-3.5 h-3.5" />
+          <span>Click here to view PDF</span>
+          <ExternalLink className="w-3 h-3" />
+        </a>
+      </div>
+    </div>
+
+    <a
+      href={pdfUrl}
+      download="AgainstCAPAdmissionScheduleDSPBPharmacyAY2627.pdf"
+      className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-[#132347] font-bold px-5 py-2.5 rounded-full text-sm shadow-md transition shrink-0"
+    >
+      <Download className="w-4 h-4" />
+      Download PDF
+    </a>
+  </div>
+</div>
       {/* Quick Facts */}
       <div className="max-w-6xl mx-auto px-6 py-12 grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
         {[
