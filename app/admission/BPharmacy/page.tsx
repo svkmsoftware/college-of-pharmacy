@@ -20,7 +20,10 @@ export const metadata: Metadata = {
 };
 
 export default function page() {
-  const pdfUrl = "/Against CAP Admission Schedule DSP B.Pharmacy A.Y.26-27.pdf";
+  // Encoded URL prevents 404 errors caused by spaces in the PDF filename
+  const pdfUrl = encodeURI(
+    "/Against CAP Admission Schedule DSP B.Pharmacy A.Y.26-27.pdf"
+  );
 
   return (
     <section className="bg-gray-50 text-[#132347]">
@@ -58,7 +61,7 @@ export default function page() {
 
           <a
             href={pdfUrl}
-            download
+            download="Against CAP Admission Schedule DSP B.Pharmacy A.Y.26-27.pdf"
             className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-[#132347] font-bold px-5 py-2.5 rounded-full text-sm shadow-md transition shrink-0"
           >
             <Download className="w-4 h-4" />
