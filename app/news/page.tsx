@@ -7,6 +7,16 @@ import { useState } from "react";
 
 const newsData = [
   {
+    title:
+      "Ganesh Chaturthi Celebration at SVKM's College of Agriculture and College of Pharmacy",
+    description:
+      "SVKM's College of Agriculture and College of Pharmacy, Shirpur, jointly celebrated Ganesh Utsav 2026 with great devotion and enthusiasm. The celebration included the installation of Lord Ganesha's idol, traditional rituals, Vedic chanting, worship, and aarti in the presence of principals, faculty members, staff, and students. The event emphasized Indian cultural heritage, traditional values, unity, and the holistic development of students. The celebration was featured in Punya Nagari newspaper.",
+    pdf: "/images/news/News_Ganapati_19102026.jpg",
+    image: "/images/news/News_Ganapati_19102026.jpg",
+    date: "17 September 2026",
+    isLatest: true,
+  },
+  {
     title: "International Yoga Day Celebration Featured in Punya Nagari",
     description:
       "SVKM's College of Pharmacy, Shirpur celebrated International Yoga Day with enthusiastic participation from students and faculty members. The session included various yoga asanas, pranayama, meditation, and breathing exercises aimed at promoting physical fitness, mental well-being, and a healthy lifestyle. The event highlighted the importance of incorporating yoga into daily life and was featured in Punya Nagari newspaper.",
@@ -139,7 +149,6 @@ const newsData = [
     pdf: "/images/news/sports_day_02092026.jpg",
     image: "/images/news/sports_day_02092026.jpg",
     date: "02 September 2026",
-    isLatest: true,
   },
 ];
 

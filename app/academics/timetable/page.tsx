@@ -36,7 +36,7 @@ const page = () => {
             {/* Embedded PDF */}
             <div className="border border-gray-200 rounded-lg overflow-hidden">
               <iframe
-                src="/docs/timetable.pdf"
+                src="/docs/timetable_19102026.pdf"
                 className="w-full h-[75vh]"
                 title="Institute Time Table"
               />

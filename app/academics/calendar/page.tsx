@@ -64,7 +64,7 @@ const page = () => {
               </p>
 
               <a
-                href="/docs/academic_calendar_of_university_2026.pdf"
+                href="/docs/Academic_Calender_2026-27.pdf"
                 target="_blank"
                 className="inline-flex items-center gap-2 bg-sky-900 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-sky-800 transition"
               >
